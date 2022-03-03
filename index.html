@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T1 - Nèn tảng học trực tuyến</title>
+    <link rel="icon" href="./asset/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <================FONT================> -->
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./asset/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <================CSS================> -->
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <!-- <================SLIDER================> -->
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="notice">
+
+    </div>
+    <div class="side__bar-respon">
+        <div class="side__bar-respon-left">
+            <div class="side__bar-respon-user">
+                <img src="./asset/img/logo.png" alt="" class="side__bar-respon-user-img">
+            </div>
+
+            <ul class="side__bar-respon-list">
+                <li class="side__bar-respon-item issidebar-respon-active">
+                    <a href="#" class="side__bar-respon-item-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item">
+                    <a href="./courses.html" class="side__bar-respon-item-link">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Học</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-question"></i>
+                        <span>Hỏi</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-code"></i>
+                        <span>Code</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item isspacing">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Nội dung đã lưu</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Giới thiệu</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-users"></i>
+                        <span>Cơ hội việc làm</span>
+                    </a>
+                </li>
+                <li class="side__bar-respon-item isspacing">
+                    <a href="" class="side__bar-respon-item-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side__bar-respon-right">
+
+        </div>
+    </div>
+    <div id="root">
+        <div class="app__wrap">
+            <!-- Header -->
+            <div class="header__wrap">
+                <div class="header__icon-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header__icon">
+                    <div class="header__icon-img">
+                        <img src="./asset/img/logo.png" alt="" class="header__icon-img-item">
+                    </div>
+                    <div class="header__icon-heading">
+                        <span class="header__icon-heading-text">Học lập trình để đi làm</span>
+                    </div>
+                    <div class="page__sidebar-add-box">
+                        <div class="page__sidebar-add-box-item">
+                            <i class="fas fa-pencil-alt"></i>
+                            <strong>Viết blog</strong>
+                        </div>
+                        <div class="page__sidebar-add-box-item">
+                            <i class="fas fa-question"></i>
+                            <strong>Đặt câu hỏi</strong>
+                        </div>
+                        <div class="page__sidebar-add-box-item">
+                            <i class="fas fa-code"></i>
+                            <strong>Chia sẻ code</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <div class="header__search-wrap">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="header__search-input"
+                            placeholder="Tìm kiếm khóa học, bài viết, video,...">
+                    </div>
+                </div>
+                <div class="header__information">
+                    <div class="header__information-wrap">
+                        <div class="header__information-search-icon-moblie">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="header__information-notify">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="header__information-img">
+                            <img src="./asset/img/273405646_1120976518650738_1822394927979577615_n.jpg" alt=""
+                                class="header__information-img-item">
+                        </div>
+
+                        <!-- Notify box -->
+                        <div class="header__information-notify-box">
+                            <div class="header__information-notify-box-header">
+                                <h1 class="header__information-notify-box-heading">Thông báo</h1>
+                                <span class="header__information-notify-box-tag">Đánh dấu tất cả đã đọc</span>
+                            </div>
+                            <div class="header__information-notify-box-page">
+                                <div class="header__information-notify-box-page-icon">
+                                    <img src="./asset/img/273405646_1120976518650738_1822394927979577615_n.jpg" alt="">
+                                </div>
+                                <div class="header__information-notify-box-page-content">
+                                    <p class="header__information-notify-box-content-text">Chào mừng
+                                        <strong>Tiến Nguyễn</strong>
+                                        đến với Fullsnack.edu.vn
+                                    </p>
+                                    <span class="header__information-notify-box-content-date">2 tháng trước</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notify box end -->
+
+                        <!-- User box -->
+                        <div class="header__information-user-box">
+                            <div class="header__information-user-box-header">
+                                <img src="./asset/img/273405646_1120976518650738_1822394927979577615_n.jpg" alt=""
+                                    class="header__information-user-box-img">
+                                <div class="header__information-user-box-heading">
+                                    <h3 class="header__information-user-box-heading-text">Tiến Nguyễn</h3>
+                                    <span class="header__information-user-box-heading-descript">@TinNguyen412001</span>
+                                </div>
+                            </div>
+                            <ul class="header__information-user-box-list">
+                                <li class="header__information-user-box-item-blog">Viết Blog</li>
+                                <li class="header__information-user-box-item-post">Bài viết của tôi</li>
+                                <li class="header__information-user-box-item-save">Nội dung đã lưu</li>
+                                <li class="header__information-user-box-item-setting">Cài đặt</li>
+                                <li class="header__information-user-box-item-logout" style="padding-bottom: 0;">Đăng
+                                    xuất</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header end -->
+
+            <div class="page__wrap">
+                <div class="page__sidebar">
+                    <ul class="page__sidebar-list">
+                        <li class="page__sidebar-add-item">
+                            <div class="page__sidebar-add-item-link">
+                                <i class="fas fa-plus page__sidebar-add-item-icon"></i>
+                            </div>
+
+                        </li>
+                        <li class="page__sidebar-item-handle page__sidebar-home-item issidebar-active">
+                            <a href="#" class="page__sidebar-home-item-link">
+                                <div class="page__sidebar-home-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="page__sidebar-home-description">
+                                    <span class="page__sidebar-home-description-text">Home</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page__sidebar-item-handle page__sidebar-lession-item">
+                            <a href="./courses.html" class="page__sidebar-course-item-link">
+                                <div class="page__sidebar-lession-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="page__sidebar-lession-description">
+                                    <span class="page__sidebar-lession-description-text">Học</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page__sidebar-item-handle page__sidebar-blog-item">
+                            <a href="#" class="page__sidebar-blog-item-link">
+                                <div class="page__sidebar-blog-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="page__sidebar-blog-description">
+                                    <span class="page__sidebar-blog-description-text">Blog</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="page__sidebar-item-handle page__sidebar-code-item">
+                            <a href="#" class="page__sidebar-code-item-link">
+                                <div class="page__sidebar-code-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="page__sidebar-code-description">
+                                    <span class="page__sidebar-code-description-text">Code</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Slider -->
+                <div class="swiper-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide background1">
+                                <div class="slider__content ">
+                                    <div class="slider__title">Thành Quả của học viên</div>
+                                    <div class="slider__slogan">Để đạt được kết quả tốt trong mọi việc ta cần xác định
+                                        mục tiêu rõ ràng cho việc đó.
+                                        Học lập trình cũng không là ngoại lệ.</div>
+                                    <a href="#" class="slider__btn">
+                                        Xem thành quả
+                                    </a>
+                                </div>
+                                <div class="slider__img">
+                                    <img src="./asset/img/Banner_01_2.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide background2">
+                                <div class="slider__content">
+                                    <div class="slider__title">Học ReactJS Miễn Phí!</div>
+                                    <div class="slider__slogan">Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của
+                                        khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS.</div>
+                                    <a href="#" class="slider__btn">
+                                        Đăng kí ngay
+                                    </a>
+                                </div>
+                                <div class="slider__img">
+                                    <img src="./asset/img/Banner_web_ReactJS.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide background3">
+                                <div class="slider__content">
+                                    <div class="slider__title">T1 trên Youtube</div>
+                                    <div class="slider__slogan">T1 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho
+                                        nghề IT và có những con người yêu thích lập trình T1 sẽ ở đó.
+                                        Học lập trình cũng không là ngoại lệ.</div>
+                                    <a href="#" class="slider__btn">
+                                        Truy cập kênh
+                                    </a>
+                                </div>
+                                <div class="slider__img">
+                                    <img src="./asset/img/Banner_03_youtube.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper__nav">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!--End Slider -->
+
+
+
+
+                    <!-- Courses -->
+                    <div class="page__content-home">
+                        <div class="page__content-home-heading">
+                            <strong>110.560+</strong>
+                            người khác cũng học
+                        </div>
+
+                        <div class="page__content-home-courses">
+                            <div class="page__content-home-courses-header">
+                                <h1 class="page__content-home-courses-heading">Khóa đang học</h1>
+                                <a href="./courses.html" class="page__content-home-courses-more">
+                                    Xem tất cả
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <div class="page__content-home-courses-list">
+                                <button class="course-prev-btn">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                <div class="page__content-home-courses-list-cover">
+                                    <div class="page__content-home-courses-list-wrap">
+
+                                    </div>
+                                </div>
+                                <button class="course-next-btn">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Courses end -->
+
+                        <!-- Featured-post -->
+
+                        <div class="page__content-home-featured-post">
+                            <div class="page__content-home-featured-post-header">
+                                <h1 class="page__content-home-featured-post-heading">Bài viết nổi bật</h1>
+                                <a href="#" class="page__content-home-featured-post-more">
+                                    Xem tất cả
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <div class="page__content-home-featured-post-list">
+                                <button class="featured-post-prev-btn">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                <div class="page__content-home-featured-post-list-cover">
+                                    <div class="page__content-home-featured-post-list-wrap">
+
+                                    </div>
+                                </div>
+                                <button class="featured-post-next-btn">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Featured-post end -->
+
+
+
+                        <!-- Featured-video -->
+
+                        <div class="page__content-home-featured-video">
+                            <div class="page__content-home-featured-video-header">
+                                <h1 class="page__content-home-featured-video-heading">Video nổi bật</h1>
+                                <a href="https://www.youtube.com/c/F8VNOfficial/videos" target="_blank"
+                                    class="page__content-home-featured-video-more">
+                                    Xem tất cả
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <div class="page__content-home-featured-video-list">
+                                <button class="featured-video-prev-btn">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                <div class="page__content-home-featured-video-list-cover">
+                                    <div class="page__content-home-featured-video-list-wrap">
+
+                                    </div>
+                                </div>
+                                <button class="featured-video-next-btn">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Featured-video end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer__wrap">
+            <div class="footer__list">
+                <div class="footer__infomation">
+                    <div class="footer__infomation-container">
+                        <img class="footer__logo" src="./asset/img/logo.png" alt="">
+                        <span class="footer__header-slogan">
+                            Học lập trình không khó
+                        </span>
+                    </div>
+                    <ul class="footer__infomation list">
+                        <li>Email: tien412001@gmail.com</li>
+                        <li>Address: Ha Noi,Viet Nam</li>
+                    </ul>
+                </div>
+                <div class="footer__support">
+                    <span class="footer__header">
+                        Hỗ trợ
+                    </span>
+                    <ul class="footer__support list">
+                        <li class="hover-underline-animation lienhe">Liên hệ</li>
+                        <li class="hover-underline-animation baomat">Bảo mật</li>
+                        <li class="hover-underline-animation">Điều khoản</li>
+                    </ul>
+                </div>
+                <div class="footer__about">
+                    <span class="footer__header">
+                        Về chúng tôi </span>
+                    <ul class="footer__about list">
+                        <li class="hover-underline-animation gioithieu">Giới thiệu</li>
+                        <li class="hover-underline-animation">Cơ hội việc làm</li>
+                        <li class="hover-underline-animation doitac">Đối tác</li>
+                    </ul>
+                </div>
+                <div class="footer__collab">
+                    <span class="footer__header">Đơn vị hợp tác</span>
+                    <ul class="footer__collab list">
+                        <li> Front-end: Nguyễn Ngọc Tiến </li>
+                        <li>Back-end: </li>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <script src="./swiper-bundle.min.js"></script>
+        <script src="./app.js"></script>
+</body>
+
+</html>
